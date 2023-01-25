@@ -9,7 +9,7 @@ const search = ref("");
 
 const filteredList = computed(() => {
   return store.list.filter((item) => {
-    if (search.value) {
+    if (!search.value) {
       return true;
     } else {
       const reg = new RegExp(search.value, "i");
