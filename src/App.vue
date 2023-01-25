@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import ButtonGroup from "@/components/ButtonGroup.vue";
+import ExpenseFormVue from "@/components/ExpenseForm.vue";
 </script>
 
 <template>
   <div class="container d-flex flex-column h-100 py-3">
     <h1 class="text-center form-group">Budget Planner</h1>
     <ButtonGroup />
+    <ExpenseFormVue />
     <!-- <app-button-group></app-button-group>
     <app-form-input></app-form-input>
     <app-list-group></app-list-group> -->

@@ -47,11 +47,10 @@ const toggleEdit = () => {
     <div class="col-md-4">
       <div class="rem d-flex align-items-center">
         <div class="me-3">
-          Remaining: {{ formatter.format(remaining) }}
-          <!-- <ng-container *ngIf="this.remaining >= 0">
-            {{ this.remaining | currency: "USD":"symbol":"0.0-2" }}
-          </ng-container>
-          <ng-container *ngIf="this.remaining < 0"> over limit </ng-container> -->
+          <template v-if="remaining >= 0">
+            Remaining: {{ formatter.format(remaining) }}
+          </template>
+          <template v-else>over limit</template>
         </div>
       </div>
     </div>
