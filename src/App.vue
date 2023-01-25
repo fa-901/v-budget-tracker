@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ButtonGroup from "@/components/ButtonGroup.vue";
 import ExpenseFormVue from "@/components/ExpenseForm.vue";
+import ExpenseList from "./components/ExpenseList.vue";
 </script>
 
 <template>
@@ -8,9 +9,7 @@ import ExpenseFormVue from "@/components/ExpenseForm.vue";
     <h1 class="text-center form-group">Budget Planner</h1>
     <ButtonGroup />
     <ExpenseFormVue />
-    <!-- <app-button-group></app-button-group>
-    <app-form-input></app-form-input>
-    <app-list-group></app-list-group> -->
+    <ExpenseList />
     <div class="text-center mt-auto form-text text-muted">
       <small
         >Created by
